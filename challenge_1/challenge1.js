@@ -29,11 +29,20 @@ function setText(text) {
   return $('#save-me').val(text);
 }
 
-function saveText() {
+/**
+*Actually saves text on button click
+*Alerts user that there text has actually saved
+*/
+saveButton.click(function() {
+	
 	localStorage.setItem('testText', getText());
 	alert("data saved: " + localStorage.getItem('testText'));
-}
+	});
 
-function loadText(){
+
+/**
+*Actually loads saved text on button click
+*/
+loadButton.click(function(){
 	setText(localStorage.getItem('testText'));
-}
+})
