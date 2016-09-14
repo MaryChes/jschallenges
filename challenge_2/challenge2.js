@@ -39,4 +39,12 @@ $('aside').remove();
 
 
 
+/*
+*Removes last two posts
+*Tried multiple times to splice :(
+*Went with popular solution on Google and with classmates
+*/
+$(".post:last").remove();
+$(".post").eq(4).remove();
+
 })

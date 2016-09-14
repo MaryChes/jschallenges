@@ -29,7 +29,6 @@
  */
 
  $(function(){
-
  	var shootButtonOne = $('#teamone-shoot');
  	var shootButtonTwo = $('#teamtwo-shoot');
  	var resetButton = $('#reset');
@@ -117,4 +116,3 @@
  	 	})
 
  })
-
